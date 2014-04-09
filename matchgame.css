@@ -1,0 +1,121 @@
+#game_container {
+	width: 656px;
+	margin: 0;
+	padding: 0;
+	margin-bottom: 20px;
+}
+
+#game_container #draggable_container, #game_container #droppable_container, #game_container #score_container {
+	border: 1px solid #999;
+	width: 656px;
+	margin-bottom: 20px;
+}
+
+#game_container #draggable_container {
+	height: 146px;	
+}
+
+#game_container #droppable_container {
+	height: 242px;
+}
+
+#game_container #score_container {
+/*	height: 80px;*/
+}
+
+#game_container .dragthis, #game_container .dropped, #game_container .correct, #game_container .incorrect {
+	text-align: center;
+	cursor: move;
+	background-color: #CCF;
+	width: 200px;
+	height: 30px;
+	border: 1px solid blue;
+	padding: 5px;
+	float: left;
+	margin: 5px 0 0 5px;
+	color: #333;
+	-webkit-border-radius: 5px; /* Safari 3-4, iOS 1-3.2, Android =1.6 */
+	border-radius: 5px; /* Opera 10.5, IE9+, Safari 5, Chrome, Firefox 4+, iOS 4, Android 2.1+ */
+	
+	/* useful if you don't want a bg color from leaking outside the border: */
+	-moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box;
+}
+
+#game_container .dropped, #game_container .correct, #game_container .incorrect {
+	width: 188px;
+	margin: 5px 0 0 0;
+	font-weight: normal;
+	text-align: center;
+}
+
+#game_container #draggable_container div.ui-sortable-helper {
+	-webkit-box-shadow: 3px 3px 5px 0px #333; /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+	box-shadow: 3px 3px 5px 0px #333; /* Opera 10.5, IE9+, Firefox 4+, Chrome 6+, iOS 5 */
+	-moz-box-shadow:    3px 3px 5px 0px #333;
+}
+
+#game_container #droppable_container div.subcontainer {
+	text-align: center;
+	width: 200px;
+	height: 220px;
+	border: 1px solid #990;
+	color: #333;
+	background-color: #FFC;
+	padding: 5px;
+	margin: 5px 0 0 5px;
+	float: left;
+	-webkit-border-radius: 5px; /* Safari 3-4, iOS 1-3.2, Android =1.6 */
+	border-radius: 5px; /* Opera 10.5, IE9+, Safari 5, Chrome, Firefox 4+, iOS 4, Android 2.1+ */
+	
+	/* useful if you don't want a bg color from leaking outside the border: */
+	-moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box;
+}
+
+#game_container #button_container {
+	text-align: center;
+	width: 656px;
+}
+
+#game_container .correct {
+	border: 1px solid #393;
+	background-color: #AFA;
+}
+
+#game_container .incorrect {
+	border: 1px solid #933;
+	background-color: #FAA;
+}
+
+#game_container #score_container, #game_container #message {
+	background: #E0DBDB;	
+	text-align: center;
+	color: #666;
+	font-size: 1.8em;
+	line-height: 1em;
+}
+
+#game_container #score_container #score_text {
+	padding: 20px;
+}
+
+#game_container #message {
+	padding: 20px;
+	position: absolute;
+	height: 0;
+	width: 0;
+	border: 1px solid #333;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	-webkit-box-shadow: 3px 3px 5px 0px #333; /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+	box-shadow: 3px 3px 5px 0px #333; /* Opera 10.5, IE9+, Firefox 4+, Chrome 6+, iOS 5 */
+	-moz-box-shadow: 3px 3px 5px 0px #333;
+}
+
+#game_container #message #text {
+	padding-bottom: 10px;
+}
+
+#game_container #score_container .score {
+	font-weight: bold;
+}
